@@ -21,13 +21,13 @@ const Home: NextPage = (data) => {
   
 }
 
-/*export async function getServerSideProps(){
+export async function getServerSideProps(){
 
-  const res = await fetch("http://localhost:3091/user/GSSP")
+  const res = await fetch("https://postgress.vercel.app/user/GSSP")
   const data = await res.json()
   
   return{
     props:data
   }
-}*/
+}
 export default Home
