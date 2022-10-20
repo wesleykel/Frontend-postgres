@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-//import { useUser } from '@auth0/nextjs-auth0'
+import { useUser } from '@auth0/nextjs-auth0'
 //import Head from 'next/head'
 //import Image from 'next/image'
 //import styles from '../styles/Home.module.css'
@@ -7,15 +7,16 @@ import type { NextPage } from 'next'
 const Home: NextPage = (data) => {
   
     console.log(data)
-  /*const {user, error ,isLoading}=useUser()
+  const {user, error ,isLoading}=useUser()
   
 
-  console.log(user?.nickname)*/
+  //console.log(user?.nickname)*/
    return(
      <>
      <h1>Chop Shop</h1>
-    
-
+     <a href="/api/auth/login">Login</a>
+     <p></p>
+     <a href="/api/auth/logout">Logout</a>
      </>
    ) 
   
