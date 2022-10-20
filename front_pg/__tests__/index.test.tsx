@@ -11,7 +11,7 @@ describe('Home', () => {
     const login = screen.getByText('Login') 
     expect(login).toBeInTheDocument()
   })
-})
+});
  /* it("once Login is clicked is renders logout",  ()=>{
 
     render(<UserProvider><Home /></UserProvider>)
