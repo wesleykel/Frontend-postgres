@@ -14,16 +14,8 @@ const Home: NextPage = (data) => {
    return(
      <>
      <h1>Chop Shop</h1>
-     <div>
-   <p>
+    
 
-   {!user&&<a href="/api/auth/login">Login</a>}
-  
-
-   </p>
-
-    {user&&<a href="/api/auth/logout">Logout</a>}
-   </div>
      </>
    ) 
   
