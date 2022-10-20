@@ -6,10 +6,10 @@ import type { NextPage } from 'next'
 
 const Home: NextPage = (data) => {
   
-  
+    console.log(data)
   /*const {user, error ,isLoading}=useUser()
   
-  console.log(data)
+
   console.log(user?.nickname)*/
    return(
      <>
