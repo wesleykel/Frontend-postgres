@@ -29,5 +29,5 @@ const Home: NextPage = (data) => {
   return{
     props:data
   }
-}
-export default Home*/
+}*/
+export default Home

@@ -2,7 +2,7 @@ import { render, screen  } from '@testing-library/react'
 //import userEvent from "@testing-library/user-event"
 import Home from '../pages/index'
 import '@testing-library/jest-dom'
-import { UserProvider } from '@auth0/nextjs-auth0';
+/*import { UserProvider } from '@auth0/nextjs-auth0';
 
 describe('Home', () => {
   it('renders a login text', () => {
