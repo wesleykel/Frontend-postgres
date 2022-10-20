@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { useUser } from '@auth0/nextjs-auth0'
+//import { useUser } from '@auth0/nextjs-auth0'
 //import Head from 'next/head'
 //import Image from 'next/image'
 //import styles from '../styles/Home.module.css'
@@ -7,10 +7,10 @@ import { useUser } from '@auth0/nextjs-auth0'
 const Home: NextPage = (data) => {
   
   
-  const {user, error ,isLoading}=useUser()
+  /*const {user, error ,isLoading}=useUser()
   
   console.log(data)
-  console.log(user?.nickname)
+  console.log(user?.nickname)*/
    return(
      <>
      <h1>Chop Shop</h1>
@@ -29,7 +29,7 @@ const Home: NextPage = (data) => {
   
 }
 
-export async function getServerSideProps(){
+/*export async function getServerSideProps(){
 
   const res = await fetch("http://localhost:3091/user/GSSP")
   const data = await res.json()
@@ -38,4 +38,4 @@ export async function getServerSideProps(){
     props:data
   }
 }
-export default Home
+export default Home*/
