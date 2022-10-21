@@ -1,7 +1,7 @@
 import React from 'react'
 import { useUser } from '@auth0/nextjs-auth0'
 import { useState } from 'react'
-import 'animate.css';
+
 
 
 const UserProfile = () => {
@@ -18,7 +18,7 @@ return(null)
 
 setTimeout(()=>{
 
-setWelcome("username:")
+setWelcome("Username:")
 
 },5000)
 
@@ -26,7 +26,7 @@ setWelcome("username:")
 return(
 <>
 
-{!isLoading&&<div>{welcome} {user?.name} </div>}
+{!isLoading&&<div className="text-xs  font-mono pt-1 pr-3">{welcome} {user?.name} </div>}
 
 </>
 )

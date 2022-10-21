@@ -16,9 +16,13 @@ const Home: NextPage = (data) => {
   //console.log(user?.nickname)*/
    return(
      <>  
-     <UserProfile/>
+     <nav  className="  border border-grey-600 flex justify-end w-6/6  py-3 pr-3"> 
+         <UserProfile/>
+     <UserLogin/>
+ 
+     </nav>  
      <Heading/>
-    <UserLogin/>
+
 
   
      </>
