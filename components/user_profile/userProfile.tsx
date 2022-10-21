@@ -1,10 +1,13 @@
 import React from 'react'
 import { useUser } from '@auth0/nextjs-auth0'
 import { useState } from 'react'
+import 'animate.css';
+
 
 const UserProfile = () => {
     const {user, error ,isLoading}=useUser()
   
+const [welcome, setWelcome]=useState("Welcome")
 
    
 if(!user){
@@ -13,10 +16,9 @@ return(null)
 
 }
 
-const [welcome, setWelcome]=useState(`Welcome ${user?.name}`)
 setTimeout(()=>{
 
-setWelcome(`${user?.name}`)
+setWelcome("username:")
 
 },5000)
 
@@ -24,8 +26,7 @@ setWelcome(`${user?.name}`)
 return(
 <>
 
-{!isLoading&&<div>{welcome}</div>}
-
+{!isLoading&&<div>{welcome} {user?.name} </div>}
 
 </>
 )

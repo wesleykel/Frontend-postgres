@@ -15,11 +15,12 @@ const Home: NextPage = (data) => {
 
   //console.log(user?.nickname)*/
    return(
-     <>
+     <>  
+     <UserProfile/>
      <Heading/>
     <UserLogin/>
 
-    <UserProfile/>
+  
      </>
 
    
