@@ -8,9 +8,9 @@ it("should display correct title of ` The Community Chest`", ()=>{
 
 render(<Heading/>)
 
-const title = screen.getByText("The Community Chest")
-const title2 = screen.getByText("Food Bank and Community Hub")
-expect(title).toBeInTheDocument()
+
+const title2 = screen.getByText("Your Food Bank and Community Hub")
+
 expect(title2).toBeInTheDocument()
 })
 
